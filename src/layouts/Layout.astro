@@ -1,51 +1,104 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+<html lang="es">
+  <head>
+    <!-- Caracteres -->
+    <meta charset="UTF-8" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="TuNombre" />
+
+    <!-- Descripcion de la página -->
+    <meta
+      name="description"
+      content="Repositorio dedicado al almacenamiento de proyectos y ejercicios realizados durante la inmersión en desarrollo de Alura Latam."
+    />
+
+    <!-- Palabras clave -->
+    <meta
+      name="keywords"
+      content="Alura Latam, desarrollo de software, proyectos, ejercicios, inmersión, programación"
+    />
+
+    <!-- Asegurando responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icono de la página -->
+    <link rel="shortcut icon" href="/imgs/imagenes/2.png" type="image/x-icon" />
+
+    <!-- Importando bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Iconos de bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Titulo de la página web -->
+    <title>Inmersión dev | {title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  /*Importando fuente Roboto*/
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+  /*Variables*/
+  :root {
+    --azul: #fff;
+    --blanco: #fff;
+    --negro: #fff;
+    --marino: #fff;
+    --verde: #fff;
+  }
+
+  /*Estilos generales*/
+  * {
+    font-family: "Roboto", sans-serif;
+  }
+
+  body {
+    background-image: linear-gradient(
+      to right top,
+      #000827,
+      #001338,
+      #001b4b,
+      #00215e,
+      #002871,
+      #023784,
+      #024798,
+      #0058ac,
+      #0073bc,
+      #0087a6,
+      #009572,
+      #069d2d
+    );
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: var(--blanco) !important;
+  }
 </style>
