@@ -1,4 +1,7 @@
 ---
+// Componentes globales
+import Footer from "../components/Footer.astro";
+
 interface Props {
   title: string;
 }
@@ -52,6 +55,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
@@ -105,5 +109,14 @@ const { title } = Astro.props;
   .card {
     border: 2px solid var(--blanco);
     background-color: transparent;
+  }
+
+  #inicio,
+  #clase01 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 </style>
