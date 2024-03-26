@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 
 // Componente funcional
 import Spinner from "../components/Spinner.astro";
+import BotonUp from "../components/BotonUp.astro";
 
 interface Props {
   title: string;
@@ -64,6 +65,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <Spinner />
+    <BotonUp />
 
     <Header />
     <slot />
@@ -101,6 +103,10 @@ const { title } = Astro.props;
   /*Estilos generales*/
   * {
     font-family: "Roboto", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
