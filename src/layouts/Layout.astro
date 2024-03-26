@@ -61,7 +61,7 @@ const { title } = Astro.props;
     />
 
     <!-- Titulo de la página web -->
-    <title>HelpDev | {title}</title>
+    <title>HelpmeDev | {title}</title>
   </head>
   <body>
     <Spinner />
@@ -81,17 +81,17 @@ const { title } = Astro.props;
     --gradiente: linear-gradient(
       to right top,
       #000827,
-      #001338,
-      #001b4b,
-      #00215e,
-      #002871,
-      #023784,
-      #024798,
-      #0058ac,
-      #0073bc,
-      #0087a6,
-      #009572,
-      #069d2d
+      #001439,
+      #001b4c,
+      #002260,
+      #002974,
+      #003582,
+      #004291,
+      #004f9f,
+      #0062a4,
+      #00719f,
+      #007e95,
+      #008989
     );
     --blanco: #fff;
     --negro: #fff;
@@ -110,21 +110,7 @@ const { title } = Astro.props;
   }
 
   body {
-    background-image: linear-gradient(
-      to right top,
-      #000827,
-      #001338,
-      #001b4b,
-      #00215e,
-      #002871,
-      #023784,
-      #024798,
-      #0058ac,
-      #0073bc,
-      #0087a6,
-      #009572,
-      #069d2d
-    );
+    background-image: var(--gradiente);
     background-repeat: no-repeat;
     min-height: 100vh;
   }
@@ -146,7 +132,8 @@ const { title } = Astro.props;
   }
 
   #inicio,
-  #clase01 {
+  #clase01,
+  #acercaDe {
     min-height: 100vh;
     display: flex;
     align-items: center;
