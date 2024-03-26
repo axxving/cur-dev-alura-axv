@@ -1,3 +1,8 @@
+---
+import ClaseCard from "../components/ClaseCard.astro";
+import dataCard from "../config/dataClases.json";
+---
+
 <div class="container-fluid pt-3 pb-3" id="inicio">
   <div class="container mt-5 pt-3">
     <h1 class="text-center titulo-inicio display-2">
@@ -12,77 +17,16 @@
     </p>
 
     <div class="row">
-      <!-- Card Clase 1 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center">
-          <img
-            src="imagen_clase1.jpg"
-            class="card-img-top"
-            alt="Imagen Clase 1"
+      {
+        dataCard.datos.map((data, index) => (
+          <ClaseCard
+            imagen={data.imagen}
+            titulo={data.titulo}
+            parrafo={data.parrafo}
+            href={data.href}
           />
-          <div class="card-body">
-            <h5 class="card-title">Clase 1</h5>
-            <p class="card-text">
-              Ejercicios hechos en la clase impartida en el día 1.
-            </p>
-            <a href="/clase01" class="btn btn-primary">Ir</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card Clase 2 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center">
-          <img
-            src="imagen_clase2.jpg"
-            class="card-img-top"
-            alt="Imagen Clase 2"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Clase 2</h5>
-            <p class="card-text">
-              Ejercicios hechos en la clase impartida en el día 2.
-            </p>
-            <a href="#" class="btn btn-primary">Ir</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card Clase 3 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center">
-          <img
-            src="imagen_clase3.jpg"
-            class="card-img-top"
-            alt="Imagen Clase 3"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Clase 3</h5>
-            <p class="card-text">
-              Ejercicios hechos en la clase impartida en el día 3.
-            </p>
-            <a href="#" class="btn btn-primary">Ir</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card Clase 4 -->
-      <div class="col-md-3 mb-4">
-        <div class="card text-center">
-          <img
-            src="imagen_clase4.jpg"
-            class="card-img-top"
-            alt="Imagen Clase 4"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Clase 4</h5>
-            <p class="card-text">
-              Ejercicios hechos en la clase impartida en el día 4.
-            </p>
-            <a href="#" class="btn btn-primary">Ir</a>
-          </div>
-        </div>
-      </div>
+        ))
+      }
     </div>
   </div>
 </div>
