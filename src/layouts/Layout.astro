@@ -3,6 +3,9 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
+// Componente funcional
+import Spinner from "../components/Spinner.astro";
+
 interface Props {
   title: string;
 }
@@ -35,7 +38,7 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Icono de la página -->
-    <link rel="shortcut icon" href="/imgs/imagenes/2.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/imgs/icono.png" type="image/x-icon" />
 
     <!-- Importando bootstrap 5 -->
     <link
@@ -57,9 +60,11 @@ const { title } = Astro.props;
     />
 
     <!-- Titulo de la página web -->
-    <title>Inmersión dev | {title}</title>
+    <title>HelpDev | {title}</title>
   </head>
   <body>
+    <Spinner />
+
     <Header />
     <slot />
     <Footer />
@@ -71,11 +76,25 @@ const { title } = Astro.props;
 
   /*Variables*/
   :root {
-    --azul: #fff;
+    --gradiente: linear-gradient(
+      to right top,
+      #000827,
+      #001338,
+      #001b4b,
+      #00215e,
+      #002871,
+      #023784,
+      #024798,
+      #0058ac,
+      #0073bc,
+      #0087a6,
+      #009572,
+      #069d2d
+    );
     --blanco: #fff;
     --negro: #fff;
     --marino: #fff;
-    --verde: #fff;
+    --azul: #00dbd0;
     --transparente: #ffffff28;
   }
 
