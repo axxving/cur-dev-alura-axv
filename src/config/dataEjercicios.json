@@ -1,0 +1,20 @@
+{
+    "contenido": [
+      {
+        "titulo": "Conversor de Criptomonedas",
+        "parrafo": "Ingrese la cantidad de criptomoneda que desea convertir y seleccione la moneda de destino.",
+        "href": "/conversor"
+      },
+      {
+        "titulo": "Segundo Ejemplo",
+        "parrafo": "Este es el segundo ejemplo de JSON con título, párrafo y enlace.",
+        "href": "https://www.ejemplo2.com"
+      },
+      {
+        "titulo": "Tercer Ejemplo",
+        "parrafo": "Este es el tercer ejemplo de JSON con título, párrafo y enlace.",
+        "href": "https://www.ejemplo3.com"
+      }
+    ]
+  }
+  
