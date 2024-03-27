@@ -1,0 +1,24 @@
+---
+import CardClaseUno from "../components/CardsClaseUno.astro";
+
+import dataEjercicios02 from "../config/dataEjercicios02.json";
+---
+
+<div class="container-fluid" id="clase01">
+  <div class="container mt-4">
+    <h1 class="text-center mt-5 titulo display-2 mb-4">Desafíos de Clase 02</h1>
+
+    <div class="row">
+      {
+        dataEjercicios02.contenido02.map((ejercicios, index) => (
+          <CardClaseUno
+            titulo={ejercicios.titulo}
+            parrafo={ejercicios.parrafo}
+            href={ejercicios.href}
+            hrefGithub={ejercicios.hrefGithub}
+          />
+        ))
+      }
+    </div>
+  </div>
+</div>

@@ -1,17 +1,16 @@
 {
-    "datos": [
-      {
-        "imagen": "/imgs/imgs-cards/clase-01.png",
-        "titulo": "Clase 01",
-        "parrafo": "Inmersion dia 01, Aprendiendo a usar CodePen y lógica de JavaScript",
-        "href": "/clases/clase01"
-      },
-      {
-        "imagen": "/imgs/imgs-cards/clase-02.png",
-        "titulo": "Clase 02",
-        "parrafo": "Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.",
-        "href": "/clase02"
-      }
-    ]
-  }
-  
+  "datos": [
+    {
+      "imagen": "/imgs/imgs-cards/clase-01.png",
+      "titulo": "Clase 01",
+      "parrafo": "Inmersion dia 02: Aprendiendo a usar CodePen y lógica de JavaScript",
+      "href": "/clases/clase01"
+    },
+    {
+      "imagen": "/imgs/imgs-cards/clase-02.png",
+      "titulo": "Clase 02",
+      "parrafo": "Inmersión día 02: Aprendiendo if, else y más conceptos de JavaScript.",
+      "href": "/clases/clase02"
+    }
+  ]
+}
