@@ -1,7 +1,7 @@
 <div class="container-fluid pt-5 pb-5" id="contacto">
   <div class="container mt-4">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 mb-3">
         <h2 class="titulo display-2">Contactame</h2>
         <p>
           Si tienes alguna pregunta o deseas más información sobre nuestros
@@ -11,24 +11,158 @@
           Puedes comunicarte con nosotros a través del siguiente formulario o
           utilizando la información de contacto proporcionada.
         </p>
+        <div class="d-flex">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/alejandrohernandezda/"
+            class="btn btn-outline-light me-2"
+            ><i class="bi bi-linkedin"></i> LinkedIn</a
+          >
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=2211295868&text=%C2%A1Estoy%20interesado/a%20en%20adquirir%20sus%20servicios!"
+            class="btn btn-outline-light"
+            ><i class="bi bi-whatsapp"></i> WhatsApp</a
+          >
+        </div>
       </div>
       <div class="col-md-6">
         <form>
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" />
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Nombre"
+            />
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" />
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Correo Electrónico"
+            />
           </div>
           <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="5"></textarea>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              rows="5"
+              placeholder="Mensaje"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-outline-info"
+            ><i class="bi bi-envelope-fill"></i> Enviar</button
+          >
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  document
+    .querySelector("#contacto form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Evitar el envío del formulario predeterminado
+
+      // Obtener los datos del formulario
+      var nombre = document.getElementById("nombre").value;
+      var email = document.getElementById("email").value;
+      var mensaje = document.getElementById("mensaje").value;
+
+      // Crear el objeto de datos a enviar
+      var formData = new FormData();
+      formData.append("nombre", nombre);
+      formData.append("email", email);
+      formData.append("mensaje", mensaje);
+
+      // Envío de la solicitud AJAX
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://formspree.io/f/xoqgnwjg"); // Cambia "https://example.com/tu/endpoint" por la URL de tu endpoint
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          // Éxito: Mostrar alerta de éxito
+          alert(
+            "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto."
+          );
+        } else {
+          // Error: Mostrar alerta de error
+          alert(
+            "Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde."
+          );
+        }
+      };
+      xhr.send(formData);
+    });
+</script>
+
+<style>
+  .bi {
+    margin-right: 8px;
+  }
+
+  .btn-outline-light {
+    &:hover {
+      box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  input {
+    background-color: var(--transparente);
+    backdrop-filter: blur(10px);
+    color: var(--blanco);
+  }
+
+  input:active {
+    background-color: var(--transparente);
+    backdrop-filter: blur(10px);
+    color: var(--blanco);
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  input:focus {
+    background-color: var(--transparente);
+    backdrop-filter: blur(10px);
+    color: var(--blanco);
+  }
+
+  input::placeholder {
+    color: var(--blanco);
+  }
+
+  input:focus {
+    border-color: var(--blanco);
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.466);
+  }
+
+  textarea {
+    background-color: var(--transparente);
+    backdrop-filter: blur(10px);
+    color: var(--blanco);
+  }
+
+  textarea:active {
+    background-color: var(--transparente);
+    backdrop-filter: blur(10px);
+    color: var(--blanco);
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  textarea:focus {
+    background-color: var(--transparente);
+    backdrop-filter: blur(10px);
+    color: var(--blanco);
+  }
+
+  textarea::placeholder {
+    color: var(--blanco);
+  }
+
+  textarea:focus {
+    border-color: var(--blanco);
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.466);
+  }
+</style>
