@@ -3,17 +3,20 @@
       {
         "titulo": "Conversor de Criptomonedas",
         "parrafo": "Ingrese la cantidad de criptomoneda que desea convertir y seleccione la moneda de destino.",
-        "href": "/conversor"
+        "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
+        "hrefGithub": "https://github.com/axxving/js-conversor-criptomonedas-axxving"
       },
       {
-        "titulo": "Segundo Ejemplo",
-        "parrafo": "Este es el segundo ejemplo de JSON con título, párrafo y enlace.",
-        "href": "https://www.ejemplo2.com"
+        "titulo": "Pidiendo el nombre del usuario",
+        "parrafo": "Agregamos la opción para que el usuario pueda ingresar su nombre, lo que proporciona una experiencia más amigable.",
+        "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/qBwXyob",
+        "hrefGithub": "https://github.com/axxving/js-conversor-con-nombre-usuario-axxving"
       },
       {
-        "titulo": "Tercer Ejemplo",
-        "parrafo": "Este es el tercer ejemplo de JSON con título, párrafo y enlace.",
-        "href": "https://www.ejemplo3.com"
+        "titulo": "Conversor de Temperaturas",
+        "parrafo": "Ingrese la temperatura que desea convertir y seleccione alguna de las opciones dadas en los mensajes de guía.",
+        "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
+        "hrefGithub": "https://github.com/axxving/js-conversor-temperaturas-axxving"
       }
     ]
   }
