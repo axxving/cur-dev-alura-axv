@@ -1,23 +1,94 @@
-<div class="container-fluid" id="resumen01">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Contenido a la izquierda -->
-      <div class="col-lg-6">
-        <h2>Título</h2>
-        <h3>Subtítulo</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in
-          vulputate lectus, eget vulputate ipsum. Quisque aliquet eget dolor vel
-          vehicula. Sed et felis nec velit interdum fermentum.
-        </p>
-        <a href="/solucionesDesafios" type="button" class="btn btn-primary d-block mx-auto">
-          <i class="bi bi-eye-fill"></i> Ver soluciones
-        </a>
+<div class="container-fluid py-5" id="resumen">
+  <div class="container mt-5 pt-3">
+    <div class="row d-flex align-items-stretch">
+      <!-- Card 1 -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-arrow-right"></i> Generación de Número Aleatorio
+            </h5>
+            <p class="card-text">
+              En esta sección se describe cómo se genera un número aleatorio
+              dentro de un rango específico utilizando la función <code
+                >getRandomNumber(min, max)</code
+              >. Este número aleatorio será el número secreto que el usuario
+              intentará adivinar.
+            </p>
+          </div>
+        </div>
       </div>
-      <!-- Imagen a la derecha -->
-      <div class="col-lg-6">
-        <img src="ruta/a/imagen.jpg" alt="Imagen" class="img-fluid" />
+      <!-- Card 2 -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-arrow-right"></i> Lógica del Juego
+            </h5>
+            <p class="card-text">
+              Aquí se explica la lógica detrás del juego de adivinar el número
+              secreto. Se establece un número mínimo y máximo permitido, se
+              genera un número secreto aleatorio dentro de este rango y se
+              establece un límite máximo de intentos. El usuario tiene la
+              oportunidad de adivinar el número secreto dentro de estos límites.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-arrow-right"></i> Interacción con el Usuario
+            </h5>
+            <p class="card-text">
+              Se detalla cómo el usuario interactúa con el juego, ingresando su
+              intento para adivinar el número secreto. Además, se explica cómo
+              se manejan las diferentes situaciones, como rendirse, ingresar un
+              número inválido o adivinar correctamente el número secreto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-6 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="bi bi-arrow-right"></i> Resultados y Retroalimentación
+            </h5>
+            <p class="card-text">
+              Finalmente, se presenta el resultado del juego al usuario,
+              incluyendo si adivinó el número secreto, cuántos intentos realizó
+              y el promedio de intentos de todos los usuarios. Además, se
+              proporciona retroalimentación sobre el desempeño del usuario en el
+              juego.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Botón "Ver Soluciones" -->
+    <div class="row mt-4">
+      <div class="col-lg-12 text-center">
+        <a href="/solucionesDesafios" type="button" class="btn btn-outline-light">
+          <i class="bi bi-check-circle-fill"></i> Ver Soluciones
+        </a>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+  #resumen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: transparent;
+  }
+</style>

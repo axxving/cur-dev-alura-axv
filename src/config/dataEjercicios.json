@@ -4,7 +4,7 @@
       "clase": "claseUno",
       "titulo": "CLASE 01 - CONVERSOR DE MONEDAS",
       "parrafo": "¿Necesitas calcular el valor de tus criptomonedas? Con nuestro conversor de monedas, simplemente ingresa la cantidad de criptomoneda que deseas convertir y elige la moneda de destino. ¡Haz tus cálculos de manera rápida y sencilla!",
-      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
+      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/yLroqzQ",
       "hrefGithub": "https://github.com/axxving/js-conversor-criptomonedas-axxving",
       "hrefweb": "/construccion",
       "nombreBoton": "Visita el sitio"
@@ -14,7 +14,7 @@
       "titulo": "CLASE 01 - CONVERSOR DE TEMPERATURAS",
       "parrafo": "¿Te gustaría convertir temperaturas con facilidad? Nuestro conversor de temperaturas está aquí para ayudarte. Ingresa la temperatura que deseas convertir y selecciona la escala deseada. ¡Haz tus conversiones de manera rápida y precisa!",
       "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
-      "hrefGithub": "https://github.com/axxving/js-conversor-criptomonedas-axxving",
+      "hrefGithub": "https://github.com/axxving/js-conversor-temperaturas-axxving",
       "hrefweb": "/construccion",
       "nombreBoton": "Visita el sitio"
     },
@@ -22,8 +22,8 @@
       "clase": "claseUno",
       "titulo": "CLASE 01 - CONVERSOR DE MONEDAS CON NOMBRE DE USUARIO",
       "parrafo": "¿Quieres personalizar tus conversiones de monedas? Con nuestro conversor de monedas, ahora puedes hacerlo. Ingresa la cantidad de criptomoneda que deseas convertir y elige la moneda de destino, ¡todo con tu nombre de usuario!",
-      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
-      "hrefGithub": "https://github.com/axxving/js-conversor-criptomonedas-axxving",
+      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/qBwXyob",
+      "hrefGithub": "https://github.com/axxving/js-conversor-con-nombre-usuario-axxving",
       "hrefweb": "/construccion",
       "nombreBoton": "Visita el sitio"
     },
@@ -31,8 +31,8 @@
       "clase": "claseDos",
       "titulo": "CLASE 02 - MENTALISTA",
       "parrafo": "¿Listo para desafiar tu mente? Con el Mentalista, podrás poner a prueba tus habilidades de adivinación. ¿Qué número estás pensando? ¡Descúbrelo ahora!",
-      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
-      "hrefGithub": "https://github.com/axxving/js-conversor-criptomonedas-axxving",
+      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/jORLpod",
+      "hrefGithub": "https://github.com/axxving/js-numero-secreto-axxving",
       "hrefweb": "/construccion",
       "nombreBoton": "Visita el sitio"
     },
@@ -40,8 +40,8 @@
       "clase": "claseTres",
       "titulo": "CLASE 03 - ALURAFLIX Y PELÍCULAS ARRAY",
       "parrafo": "¿Buscas una experiencia cinematográfica personalizada? Explora AluraFlix y nuestras películas array. Sumérgete en una amplia selección de películas y descubre tu próxima película favorita.",
-      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
-      "hrefGithub": "https://github.com/axxving/js-conversor-criptomonedas-axxving",
+      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/BaEdOJb",
+      "hrefGithub": "https://github.com/axxving/js-alura-flix-axxving",
       "hrefweb": "/construccion",
       "nombreBoton": "Visita el sitio"
     },
@@ -49,8 +49,8 @@
       "clase": "claseCuatro",
       "titulo": "CLASE 04 - ALURAFLIX Y PELÍCULAS FAVORITAS",
       "parrafo": "¿Quieres mantener un registro de tus películas favoritas? Con AluraFlix, ahora puedes hacerlo. Explora nuestra amplia biblioteca de películas y guarda tus favoritas para verlas una y otra vez. ¡Disfruta de la experiencia cinematográfica definitiva!",
-      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/gOyxYVg",
-      "hrefGithub": "https://github.com/axxving/js-conversor-criptomonedas-axxving",
+      "href": "https://codepen.io/Irving-Alejandro-Hernandez-Ramirez/pen/wvZrBLV",
+      "hrefGithub": "https://github.com/axxving/page-web-alura-flix-axxving",
       "hrefweb": "https://alura-flix-axxving.vercel.app/",
       "nombreBoton": "Visita el sitio"
     }
