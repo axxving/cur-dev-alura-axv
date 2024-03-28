@@ -11,6 +11,12 @@
       "titulo": "Clase 02",
       "parrafo": "Inmersión día 02: Aprendiendo if, else y más conceptos de JavaScript.",
       "href": "/clases/clase02"
+    },
+    {
+      "imagen": "/imgs/imgs-cards/clase-03.png",
+      "titulo": "Clase 03",
+      "parrafo": "Inmersión día 03: Aprendiendo Arrays, con el proyecto de AluraFlix.",
+      "href": "/clases/clase03"
     }
   ]
 }
