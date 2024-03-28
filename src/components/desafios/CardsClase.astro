@@ -1,13 +1,15 @@
 ---
 interface Props {
+  clase: string;
   titulo: string;
   parrafo: string;
   href: string;
   hrefGithub: string;
-  hrefweb?: string;
+  hrefweb: string;
+  nombreBoton: string;
 }
 const astroProps = Astro.props as Props;
-const { titulo, parrafo, href, hrefGithub, hrefweb } = astroProps;
+const { titulo, parrafo, href, hrefGithub, hrefweb, nombreBoton } = astroProps;
 ---
 
 <div class="col-md-4 mb-4">
@@ -23,6 +25,10 @@ const { titulo, parrafo, href, hrefGithub, hrefweb } = astroProps;
         </a>
         <a target="_blank" href={hrefGithub} class="btn btn-outline-light mt-2">
           <i class="bi bi-github"></i> Ir a GitHub
+        </a>
+        <a target="_blank" href={hrefweb} class="btn btn-outline-light mt-2">
+          <i class="bi bi-browser-chrome"></i>
+          {nombreBoton}
         </a>
       </div>
     </div>

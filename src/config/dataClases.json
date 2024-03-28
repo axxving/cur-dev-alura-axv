@@ -4,25 +4,25 @@
       "imagen": "/imgs/imgs-cards/clase-01.png",
       "titulo": "Clase 01",
       "parrafo": "Inmersion dia 02: Aprendiendo a usar CodePen y lógica de JavaScript",
-      "href": "/resumenClase01"
+      "href": "/clases/resumenClase04"
     },
     {
       "imagen": "/imgs/imgs-cards/clase-02.png",
       "titulo": "Clase 02",
       "parrafo": "Inmersión día 02: Aprendiendo if, else y más conceptos de JavaScript.",
-      "href": "/resumenClase02"
+      "href": "/clases/resumenClase04"
     },
     {
       "imagen": "/imgs/imgs-cards/clase-03.png",
       "titulo": "Clase 03",
       "parrafo": "Inmersión día 03: Aprendiendo Arrays, con el proyecto de AluraFlix.",
-      "href": "/resumenClase03"
+      "href": "/clases/resumenClase04"
     },
     {
       "imagen": "/imgs/imgs-cards/clase-04.png",
       "titulo": "Clase 04",
       "parrafo": "Inmersión día 03: Aprendiendo Arrays, con el proyecto de AluraFlix.",
-      "href": "/resumenClase04"
+      "href": "/clases/resumenClase04"
     }
   ]
 }

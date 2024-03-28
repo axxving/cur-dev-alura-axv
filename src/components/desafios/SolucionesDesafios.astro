@@ -1,0 +1,58 @@
+---
+import CardClaseUno from "../desafios/CardsClase.astro";
+
+import dataEjercicios from "../../config/dataEjercicios.json";
+---
+
+<div class="container-fluid" id="clase01">
+  <div class="container mt-5 pt-5">
+    <h1 class="text-start titulo display-5 mb-4">Desafíos de Clase 01</h1>
+
+    <div class="row">
+      {
+        dataEjercicios.contenido
+          .filter((ejercicios) => ejercicios.clase === "claseUno")
+          .map((ejercicios, index) => (
+            <CardClaseUno
+              clase={ejercicios.clase}
+              titulo={ejercicios.titulo}
+              parrafo={ejercicios.parrafo}
+              href={ejercicios.href}
+              hrefGithub={ejercicios.hrefGithub}
+              hrefweb={ejercicios.hrefweb}
+              nombreBoton={ejercicios.nombreBoton}
+            />
+          ))
+      }
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="text-start titulo display-5 mb-4">
+      Desafíos de Clases 02, 03 y 04
+    </h1>
+
+    <div class="row">
+      {
+        dataEjercicios.contenido
+          .filter(
+            (ejercicios) =>
+              ejercicios.clase === "claseDos" ||
+              ejercicios.clase === "claseTres" ||
+              ejercicios.clase === "claseCuatro"
+          )
+          .map((ejercicios, index) => (
+            <CardClaseUno
+              clase={ejercicios.clase}
+              titulo={ejercicios.titulo}
+              parrafo={ejercicios.parrafo}
+              href={ejercicios.href}
+              hrefGithub={ejercicios.hrefGithub}
+              hrefweb={ejercicios.hrefweb}
+              nombreBoton={ejercicios.nombreBoton}
+            />
+          ))
+      }
+    </div>
+  </div>
+</div>
