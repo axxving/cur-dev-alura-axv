@@ -4,9 +4,10 @@ interface Props {
   parrafo: string;
   href: string;
   hrefGithub: string;
+  hrefweb?: string;
 }
 const astroProps = Astro.props as Props;
-const { titulo, parrafo, href, hrefGithub } = astroProps;
+const { titulo, parrafo, href, hrefGithub, hrefweb } = astroProps;
 ---
 
 <div class="col-md-4 mb-4">

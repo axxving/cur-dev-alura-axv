@@ -135,7 +135,8 @@ const { title } = Astro.props;
   #clase01,
   #acercaDe,
   #contacto,
-  #conversorCriptomonedas {
+  #conversorCriptomonedas,
+  #resumen01 {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -150,10 +151,6 @@ const { title } = Astro.props;
 
   /* Cambiar el color de fondo del body en diferentes puntos de ruptura */
   @media (min-width: 276px) {
-    body {
-      background-color: #3358ff; /* Color naranja */
-    }
-
     .nav-link:hover {
       color: var(--blanco);
       text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
@@ -161,10 +158,6 @@ const { title } = Astro.props;
     }
   }
   @media (min-width: 576px) {
-    body {
-      background-color: #ff5733; /* Color naranja */
-    }
-
     .nav-link:hover {
       color: var(--blanco);
       text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
@@ -173,10 +166,6 @@ const { title } = Astro.props;
   }
 
   @media (min-width: 768px) {
-    body {
-      background-color: #ffc300; /* Color amarillo */
-    }
-
     .nav-link:hover {
       color: var(--blanco);
       text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
@@ -185,20 +174,11 @@ const { title } = Astro.props;
   }
 
   @media (min-width: 992px) {
-    body {
-      background-color: #daf7a6; /* Color verde claro */
-    }
   }
 
   @media (min-width: 1200px) {
-    body {
-      background-color: #5dade2; /* Color azul claro */
-    }
   }
 
   @media (min-width: 1400px) {
-    body {
-      background-color: #af7ac5; /* Color morado */
-    }
   }
 </style>
